@@ -1,0 +1,12 @@
+This is a program for protein reconstruction using Riemannian approach (Remman) of two algorithms: conjugate gradient (Cg) and trust region (Tr) and Random method from NOESY distances. The inputs are (1) Method: Remman or Random, (2) PDB Entry, (3) Repeat times. The outputs are the protein structure from purely geometrical restraints and runtime.
+For the EM-procedure protocal and XPLOR water refinement, we refere to the folder "EM-procedure" and "water-wrefine", respectively.
+The source code (in MATLAB ) is in the zip file "source_code.zip".
+For users who have MATLAB, just call the function "Compile_mex_files" and "Main_Remman" sequentially in Matlab.
+For users who DO NOT have Matlab, the standalone installation and usage of Riemannian (No need to install MATLAB) for Linux platform is as follows:
+(1) Download the application Riemannian package from "http://physics.bit.edu.cn/docs/20180921020135470875.zip" (orhttps://www.dropbox.com/sh/xk7twn25yhk87ph/AABWLNDyT9kML39-EVgZSK7Ga?dl=0) and the MCR2014b-Linux package from "https://ww2.mathworks.cn/products/compiler/matlab-runtime.html".
+(2) For running, open a command terminal, go to the Riemannian package folder and type command (Note that (1) the folder of "your_output_pathway" needs to be created if not exist, (2) if the folder of proteins don’t contain your target protein, you need to download restraints from the NMR Restraints Grid.):
+"./run_PRASD.sh your_MCR_folder_pathway your_protein_folder_pathway your_protein_name method Repeat times"
+Two examples:
+“./run_Main_Remman.sh /usr/local/MATLAB/R2014b 1gb1 Remman 1”
+“./run_Main_Remman.sh /usr/local/MATLAB/R2014b 1gb1 Random 2”
+
