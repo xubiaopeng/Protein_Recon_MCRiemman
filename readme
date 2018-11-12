@@ -3,7 +3,7 @@ For the EM-procedure protocal and XPLOR water refinement, we refere to the folde
 The source code (in MATLAB ) is in the zip file "source_code.zip".
 For users who have MATLAB, just call the function "Compile_mex_files" and "Main_Remman" sequentially in Matlab.
 For users who DO NOT have Matlab, the standalone installation and usage of Riemannian (No need to install MATLAB) for Linux platform is as follows:
-(1) Download the application Riemannian package from https://www.dropbox.com/sh/xk7twn25yhk87ph/AABWLNDyT9kML39-EVgZSK7Ga?dl=0 and the MCR2014b-Linux package from "https://ww2.mathworks.cn/products/compiler/matlab-runtime.html".
+(1) Download the application Riemannian package from "https://www.dropbox.com/s/ke9f9n70mouytio/Protein_Recon_MCRiemman.zip?dl=0" and the MCR2014b-Linux package from "https://ww2.mathworks.cn/products/compiler/matlab-runtime.html".
 (2) For running, open a command terminal, go to the Riemannian package folder and type command 
 (Note that (1) the output folders of "cg_pdb_out", "tr_pdb_out" and "Random_pdb_out" need to be created if not exist, (2) if the folder of proteins don’t contain your target protein, you need to download restraints from the NMR Restraints Grid. (3) the file "ainfo.mat" should be copied in the working directory ):
 "/run_Main_Remman.sh your_MCR_folder_pathway your_protein_name method Repeat_times"
